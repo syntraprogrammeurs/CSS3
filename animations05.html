@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Document</title>
+    <style>
+        *{
+            box-sizing: border-box;
+        }
+        body{
+            background-color: gainsboro;
+        }
+        .box{
+            position: relative;
+            height: 200px;
+            width: 50%;
+            background-color: teal;
+            margin: 80px auto;
+            border: 5px solid #fff;
+            animation-name: anim;
+            animation-duration: 2s;
+            animation-fill-mode: forwards;
+        }
+        .box:hover{
+            
+        }
+        @keyframes anim{
+            0%{
+                transform: translateX(-150px);
+            }
+            100%{
+                transform: translateX(150px);
+            }
+        }
+        
+    </style>
+</head>
+<body>
+    <div class="box">
+    
+    </div>
+</body>
+</html>

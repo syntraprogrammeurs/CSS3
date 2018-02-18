@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Document</title>
+    <style>
+        *{
+            box-sizing: border-box;
+        }
+        body{
+            background-color: gainsboro;
+        }
+        .box{
+            position: relative;
+            height: 200px;
+            width: 50%;
+            margin: 50px auto;
+            border: 5px solid #fff;
+        }
+        @keyframes bg{
+            0%{
+                background-color: gray;
+            }
+            100%{
+                background-color: tomato;
+            }
+        }
+        @keyframes move{
+            0%{
+                transform: translateX(0px);
+            }
+            100%{
+                transform: translateX(150px);
+            }
+        }
+        #bg{
+            animation-name: bg;
+            animation-duration: 2s;
+        }
+        #move{
+            animation-name: move;
+            animation-duration: 2s;
+        }
+        #both{
+            animation-name: move, bg;
+            animation-duration: 2s;
+        }
+        
+    </style>
+</head>
+<body>
+    <div class="box" id="bg">
+    
+    </div>
+    <div class="box" id="move">
+        
+    </div>
+    <div class="box" id="both">
+        
+    </div>
+</body>
+</html>

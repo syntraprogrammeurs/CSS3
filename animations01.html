@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Document</title>
+    <style>
+        *{
+            box-sizing: border-box;
+        }
+        body{
+            background-color: gainsboro;
+        }
+        .box{
+            position: relative;
+            height: 200px;
+            width: 50%;
+            margin: 80px auto;
+            border: 5px dashed #fff;
+            animation-name: anim;
+            animation-duration: 2s;
+        }
+        @keyframes anim{
+            0%{
+                background-color: pink;
+            }
+            50%{
+                background-color: chocolate;
+            }
+            75%{
+                background-color: crimson;
+            }
+            100%{
+                background-color: tomato;
+            }
+        }
+        
+    </style>
+</head>
+<body>
+    <div class="box">
+    
+    </div>
+</body>
+</html>

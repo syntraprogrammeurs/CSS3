@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Document</title>
+    <style>
+        *{
+            margin: 0px;
+            padding: 0px;
+            box-sizing: border-box;
+        }
+        body{
+            background-color:lightgray;; 
+        }
+        .box{
+            position: relative;
+            width: 60%;
+            margin: 50px auto;
+            text-align: center;
+            background-color: #fff;
+            overflow:hidden;
+            
+        }
+        
+        .box:hover .second{
+            transform: translateX(100%);
+        }
+        .box h3{
+            font-size: 2em;
+            padding: 10px;
+            padding-bottom: 0px;
+        }
+        .box p{
+            padding: 15px;
+            font-size: 1.1em;
+        }
+        .main{
+            background-color: teal;
+            color: #fff;
+            width: 100%;
+        }
+        .second{
+            position: absolute;
+            top: 0px;
+            right: 100%;
+            background-color: firebrick;
+            color: #fff;
+            width: 100%;
+            transition: transform 0.3s;
+        }
+    
+    </style>
+</head>
+<body>
+    <div class="box">
+        <div class="main">
+            <h3>Main</h3>
+            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Repudiandae ducimus nam voluptas repellat amet cupiditate omnis modi error est ipsum rem, tempora ipsa inventore eius voluptate ad, recusandae! Laboriosam, incidunt!</p>
+        </div>
+        <div class="second">
+            <h3>Second</h3>
+            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Repudiandae ducimus nam voluptas repellat amet cupiditate omnis modi error est ipsum rem, tempora ipsa inventore eius voluptate ad, recusandae! Laboriosam, incidunt!</p>
+        </div>
+    </div>
+</body>
+</html>

@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Document</title>
+    <style>
+        body{
+            background-color: black;
+        }
+        .container{
+            background-color: #fff;
+            margin: 20px;
+            padding: 20px;
+        }
+        .box{
+            background-color: red;
+            height: 60px;
+            width: 60px;
+            position: relative;
+            left: 0;
+            transition-property: left;
+            transition-duration: 1s;
+        }
+        .container:hover .box{
+            left: 90%;
+        }
+        #one .box{
+            transition-timing-function: cubic-bezier(.03,.9,.97,-0.08);
+        }
+        #two .box{
+            transition-timing-function: cubic-bezier(.69,.03,.97,-0.08);
+        }
+        #three .box{
+            transition-timing-function: cubic-bezier(.8,-0.43,.6,1.55) ;
+        }
+    
+    </style>
+</head>
+<body>
+    <div class="container" id="one">
+        <div class="box">
+            
+        </div>
+    </div>
+    <div class="container" id="two">
+        <div class="box">
+            
+        </div>
+    </div>
+    <div class="container" id="three">
+        <div class="box">
+            
+        </div>
+    </div>
+</body>
+</html>

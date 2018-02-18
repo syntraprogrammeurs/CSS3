@@ -1,0 +1,116 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Document</title>
+    <style>
+        *{
+            margin: 0px;
+            padding: 0px;
+            box-sizing: border-box;
+        }
+        .cards-container{
+            text-align: center;
+            width: 90%;
+            margin:50px auto;
+        }
+        .card{
+            width: 250px;
+            height: 200px;
+            display: block;
+            margin: 20px auto;
+            cursor: pointer;
+            
+        }
+        .card-img img{
+            width: 250px;
+            height: 200px;
+        }
+        #one{
+            transition: transform 0.3s;
+        }
+        #one:hover{
+            transform: scale(1.1);
+        }
+        #two{
+            overflow: hidden;
+        }
+        #two img{
+            transform: rotate(5deg) scale(1.2);
+            transition: transform 0.3s;
+        }
+        #two:hover img{
+            transform: rotate(0deg) scale(1);
+        }
+        
+        #three{
+            overflow: hidden;
+           
+        }
+        #three img{
+            transition: transform 0.3s;
+            transform-origin: top left;
+        }
+        #three img:hover{
+            transform: scale(1.1);
+            
+        }
+        #four{
+            overflow: hidden;
+        }
+        #four img{
+            transition: filter 0.3s 0.1s, transform 0.3s;
+        }
+        #four:hover img{
+            filter: blur(5px);
+            transform: scale(2);
+        }
+        
+        #five{
+            overflow: hidden;
+        }
+        #five img{
+            transition: filter 0.3s 0.1s, transform 0.3s;
+        }
+        #five:hover img{
+            filter:grayscale(100%);
+            transform: rotate(10deg) scale(1.5);
+        }
+        
+    </style>
+</head>
+<body>
+    <div class="cards-container">
+        <div class="card" id="one">
+            <div class="card-img">
+                <img src="1.jpg" alt="">
+            </div>
+            
+        </div>
+        
+        <div class="card" id="two">
+            <div class="card-img" >
+                <img src="1.jpg" alt="">
+            </div>
+            
+        </div>
+        <div class="card" id="three">
+            <div class="card-img">
+                <img src="1.jpg" alt="">
+            </div>
+        </div>
+        <div class="card" id="four">
+            <div class="card-img">
+                <img src="1.jpg" alt="">
+            </div>
+            
+        </div>
+        <div class="card" id="five">
+            <div class="card-img">
+                <img src="1.jpg" alt="">
+            </div>
+            
+        </div>
+    </div>
+</body>
+</html>

@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Document</title>
+    <style>
+        body{
+            background-color: gainsboro;
+        }
+        .box{
+            height: 200px;
+            width: 200px;
+            background-color: gray;
+            transition-property: height, width;
+            transition-duration: 1s,3s;
+            transition-timing-function: ease-out,
+                cubic-bezier(1,-0.29,.25,0.77);
+        }
+        .box:hover{
+            height: 400px;
+            width: 600px;
+        }
+    </style>
+</head>
+<body>
+    
+    <div class="box">
+        
+    </div>
+    
+</body>
+</html>
